@@ -27,6 +27,24 @@ global lang_yd_trans:=  "------------------------------ Youdao Translation -----
 global lang_yd_dict:=   "------------------------------ Youdao dictionary ------------------------------"
 global lang_yd_phrase:= "----------------------------------- Phrase ------------------------------------"
 
+; lib_googleTrans.ahk
+global lang_google_translating:="Translating... (If the network is too bad, the translation request will temporarily block the program, just wait a moment)"
+global lang_google_name:="Google Translation"
+global lang_google_needKey:="Google translator cannot be used without the key of Google translation API"
+global lang_google_fileNotExist:="File (folder) does not exist"
+global lang_google_errorNoNet:="Failed to send, maybe the network is disconnected"
+global lang_google_errorTooLong:="Some sentences are too long"
+global lang_google_errorNoResults:="No result"
+global lang_google_errorTextTooLong:="The text to be translated is too long"
+global lang_google_errorCantTrans:="Unable to translate"
+global lang_google_errorLangType:="Unsupported language type"
+global lang_google_errorKeyInvalid:="Invalid key"
+global lang_google_errorSpendingLimit:="Reached today's consumption limit, or the length of the request exceeds the number of characters that can be consumed today"
+global lang_google_errorNoFunds:="Insufficient account balance"
+global lang_google_trans:=  "------------------------------ Google Translation -----------------------------"
+global lang_google_dict:=   "------------------------------ Google dictionary ------------------------------"
+global lang_google_phrase:= "----------------------------------- Phrase -----------------"
+
 global lang_settingsFileContent:=""
 lang_settingsFileContent=
 (

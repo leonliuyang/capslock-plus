@@ -93,7 +93,7 @@ else ;IfWinNotExist,  ahk_id %transGuiHwnd% ;有道翻译
 
 if(NativeString) ;如果传入的字符串非空则翻译
 {
-	;~ MsgBox, 2
+	;MsgBox, %NativeString%
 	SetTimer, ydApi, -1
 	return
 }
@@ -127,7 +127,6 @@ catch
 }
 afterSend:
 responseStr := whr.ResponseText
-
 ;~ transJson:=JSON_from(responseStr) 
 transJson:=JSON.Load(responseStr)
 ; MsgBox, % responseStr
@@ -172,8 +171,10 @@ if(returnError) ;如果返回错误结果，显示出相应原因
 }
  ;================拼MsgBox显示的内容
 {
-
+	
 	MsgBoxStr:= % transJson.query . "`t"   ;原单词
+	;msgbox , %responseStr%
+	;msgbox , %transJson%
 	if(transJson.basic.phonetic)
 	{
 		MsgBoxStr:=% MsgBoxStr . "[" . transJson.basic.phonetic . "] "  ;读音
@@ -196,6 +197,7 @@ if(returnError) ;如果返回错误结果，显示出相应原因
 			break
 		}
 	}
+	;msgbox , %MsgBoxStr%
 	;~ MsgBoxStr:= % MsgBoxStr . "--有道词典结果--`n"
 	Loop
 	{
@@ -247,7 +249,7 @@ if(returnError) ;如果返回错误结果，显示出相应原因
 		}
 	}
 }
-;~ MsgBox, % MsgBoxStr
+;MsgBox, % MsgBoxStr
 setTransText:
 ControlSetText, , %MsgBoxStr%, ahk_id %transEditHwnd%
 ControlFocus, , ahk_id %transEditHwnd%

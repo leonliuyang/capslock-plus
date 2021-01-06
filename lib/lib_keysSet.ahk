@@ -62,7 +62,8 @@ keySchemeInit_capslox(){
     if(!keyset.caps_s)
         keyset.caps_s:="keyFunc_moveLeft"
     if(!keyset.caps_t)
-        keyset.caps_t:="keyFunc_moveUp(10)"
+        keyset.caps_t:="keyFunc_google_translate"
+        ;keyset.caps_t:="keyFunc_moveUp(10)"
     if(!keyset.caps_u)
         keyset.caps_u:="keyFunc_selectHome"
     if(!keyset.caps_v)

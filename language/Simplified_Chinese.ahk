@@ -27,6 +27,26 @@ global lang_yd_trans:="------------------------------------有道翻译---------
 global lang_yd_dict:="------------------------------------有道词典------------------------------------"
 global lang_yd_phrase:="--------------------------------------短语--------------------------------------"
 
+; lib_googleTrans.ahk
+global lang_google_translating:="翻译中1...  （如果网络太差，翻译请求会暂时阻塞程序，稍等就好）"
+global lang_google_name:="谷歌翻译"
+global lang_google_needKey:="缺少谷歌翻译API的key，谷歌翻译无法使用"
+global lang_google_fileNotExist:="文件（文件夹）不存在"
+global lang_google_errorNoNet:="发送异常，可能是网络已断开"
+global lang_google_errorTooLong:="部分句子过长"
+global lang_google_errorNoResults:="无词典结果"
+global lang_google_errorTextTooLong:="要翻译的文本过长"
+global lang_google_errorCantTrans:="无法进行有效的翻译"
+global lang_google_errorLangType:="不支持的语言类型"
+global lang_google_errorKeyInvalid:="无效的key"
+global lang_google_errorSpendingLimit:="已达到今日消费上限，或者请求长度超过今日可消费字符数"
+global lang_google_errorNoFunds:="帐户余额不足"
+global lang_google_trans:="------------------------------------谷歌翻译------------------------------------"
+global lang_google_dict:="------------------------------------谷歌词典------------------------------------"
+global lang_google_phrase:="--------------------------------------短语--------------------------------------"
+
+
+
 global lang_settingsFileContent:=""
 lang_settingsFileContent=
 (

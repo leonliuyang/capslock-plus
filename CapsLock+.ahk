@@ -60,6 +60,7 @@ allowRunOnClipboardChange:=true
 #Include lib_mouseSpeed.ahk
 #Include lib_mathBoard.ahk
 #include lib_loadAnimation.ahk
+#Include lib_googleTrans.ahk
 
 
 ;change dir

@@ -155,6 +155,27 @@ keyFunc_translate(){
     Return
 }
 
+keyFunc_google_translate(){
+    global
+    selGoogleText:=getSelText()
+    if(selGoogleText)
+    { 
+        ggTranslate(selGoogleText)
+    }
+    else
+    { 
+        ClipboardOld:=ClipboardAll
+        Clipboard:=""
+        SendInput, ^{Left}^+{Right}^{insert}
+        ClipWait, 0.05
+        selGoogleText:=Clipboard
+        ggTranslate(selGoogleText)
+        Clipboard:=ClipboardOld
+    }
+    SetTimer, setGoogleTransGuiActive, -400
+    Return
+}
+
 
 keyFunc_end(){
     SendInput,{End}
